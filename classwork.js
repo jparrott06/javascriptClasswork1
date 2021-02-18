@@ -6,9 +6,9 @@ function factorize(num) {
 
     factor_list = [];
 
-    for (let i = 1; i < Math.floor(Math.sqrt(num)); i++) {
+    for (let i = 1; i < Math.ceil(Math.sqrt(num)); i++) {
 
-        if (num % i === 0) { //if num % i = 0, then we know i is a factor of num
+        if (num % i === 0 && factor_list.indexOf(i) == -1) { //if num % i = 0, then we know i is a factor of num
 
             factor_list.push(i);
 
@@ -24,7 +24,12 @@ function factorize(num) {
 
 }
 
-//console.log(factorize(20));
+console.log(factorize(2));
+console.log(factorize(4));
+console.log(factorize(6));
+console.log(factorize(10));
+console.log(factorize(15));
+console.log(factorize(20));
 
 //END factorize function
 
