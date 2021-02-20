@@ -8,7 +8,7 @@ function factorize(num) {
 
     for (let i = 1; i < Math.ceil(Math.sqrt(num)); i++) {
 
-        if (num % i === 0 && factor_list.indexOf(i) == -1) { //if num % i = 0, then we know i is a factor of num
+        if (num % i === 0 && factor_list.indexOf(i) == -1) { //if num % i = 0, then we know i is a factor of num. if indexOf(i) == -1, it isn't in factor_list yet
 
             factor_list.push(i);
 
@@ -23,13 +23,6 @@ function factorize(num) {
     return factor_list.sort((a,b) => a-b); //sort in ascending order
 
 }
-
-console.log(factorize(2));
-console.log(factorize(4));
-console.log(factorize(6));
-console.log(factorize(10));
-console.log(factorize(15));
-console.log(factorize(20));
 
 //END factorize function
 
@@ -69,8 +62,5 @@ function multiply(x,y) {
 function power(x,y) {
     return Math.pow(x,y);
 }
-
-//console.log(doOperation(5,10,multiply));
-//console.log(doOperation(5,10,power));
 
 //END doOperation function

@@ -14,43 +14,6 @@
         console.log(doOperation(5, 10, power));
     </script>
 
-    <div>Input a positive integer to get its factors</div>
-    number: <input type="number" name="number" id="number">
-    <button
-        onclick="alert('Factors of ' + document.getElementById('number').value + ' are: ' + factorize(document.getElementById('number').value))">Factorize!</button>
-
-    <br>
-
-    <div>Input a word or sentence to find all its unique characters</div>
-    string: <input type="text" name="string" id="string">
-    <button
-        onclick="alert('Unique characters of \'' + document.getElementById('string').value + '\'' + ' are: ' + findUnique(document.getElementById('string').value))">findUnique!</button>
-
-    <br>
-
-    <div>Input two numbers and an operation to calculate the result</div>
-    num1: <input type="number" name="num1" id="num1">
-    num2: <input type="number" name="num2" id="num2">
-    
-    <br>
-
-    <label for="ddOperation">
-        <span>Operation</span>
-        <strong><abbr title="required">*</abbr></strong>
-    </label>
-    <select name="ddOperation" id="ddOperation">
-        <option value="multiply" selected>multiply</option>
-        <option value="power">power</option>
-    </select>
-
-    <button onclick="alert('Numbers: ' + document.getElementById('num1').value + ' and ' + document.getElementById('num2').value + ', using operation: \'' + 
-    document.getElementById('ddOperation').value + '\'' +' is: ' + 
-    $(document.getElementById('ddOperation').value)(document.getElementById('num1').value, document.getElementById('num2').value))">doOperation!</button>
-
-
-
-
-
 </body>
 
 </html>
